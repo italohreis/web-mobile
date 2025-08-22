@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Título da página</title>
+</head>
+<body>
+    <h1>Primeiro Cabeçalho</h1>
+    <h2>Segundo Cabeçalho</h2>
+    <h3>Terceiro Cabeçalho</h3>
+    <p>
+        Primeiro paragrafo
+    </p>
+
+    <img src="img/image.jpeg" title="Imagem de Por do Sol" height="500" width="500">
+
+    <div class="container">
+        <a href="https://virtual.uft.edu.br/" target="_blank">Site do Virtual UFT</a>
+    </div>
+    <h2>Lista Ordenada</h2>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <h2>Lista não Ordenada</h2>
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+
+    <table>
+        <Caption>Descrição da tabela</Caption>
+        <tr>
+            <td>Linha 1 - Coluna 1</td>
+            <td>Linha 1 - Coluna 2</td>
+        </tr>
+        <tr>
+            <td>Linha 2 - Coluna 1</td>
+            <td>Linha 2 - Coluna 2</td>
+        </tr>
+        <tr>
+            <td>Linha 3 - Coluna 1</td>
+            <td>Linha 3 - Coluna 2</td>
+        </tr>
+    </table>
+
+    <form action="" method="post">
+        <div>
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="inome" placeholder="Digite seu nome">
+        </div>
+
+        <div>
+            <label for="senha">Senha: </label>
+            <input type="password" name="senha" id="isenha" placeholder="Digite sua senha">
+        </div>
+        <br>
+        <div>
+            <label for="idade">Idade: </label>
+            <input type="number" name="idade" id="idade" min="0" max="120">
+        </div>
+        <br>
+        <div>
+            <label for="genero">Gênero</label>
+            <input type="radio" name="genero" id="masculino" value="1" checked> masculino
+            <input type="radio" name="genero" id="feminino" value="2"> Feminino
+        </div>
+        <br>
+        <div>
+            <label for="veiculo1">Bike</label>
+            <input type="checkbox" name="veiculo1" value="bike">
+
+            <label for="veiculo2">Carro</label>
+            <input type="checkbox" name="veiculo2" value="carro">
+        </div>
+
+        <div>
+            <select name="veiculo" id="iveiculo">
+                <option value="1">Bike</option>
+                <option value="2">Carro</option>
+                <option value="3">Moto</option>
+            </select>
+        </div>
+
+        <div>
+            <textarea name="mensagem" id="mensagem" rows="10" cols="30"></textarea>
+        </div>
+        <div>
+            <input type="date" name="data" id="data" min="2025-01-01">
+        </div>
+        <div>
+            <input list="comidas">
+            <datalist id="comidas">
+                <option value="Queijo">
+                <option value="Pão">
+                <option value="Presunto">
+        </div>
+
+        <div>
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+            <input type="button" value="botao1" onclick="soma(5, 10)">
+        </div>
+     </form>
+</body>
+<script>
+    function soma (a, b) {
+        let resultado = a + b;
+        alert("A soma é: " + resultado);
+    }
+</script>
+</html>
